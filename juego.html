@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Cat Game - El Juego</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="mockup/ninja_cat_logo.png" alt="Ninja Cat Game Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="juego.html" class="active">Juego</a></li>
+                    <li><a href="#cartas">Cartas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="game-hero">
+        <div class="container">
+            <h1>El Juego de Cartas Ninja Cat</h1>
+            <p>Domina las artes ninja con tu mazo de cartas estratégico</p>
+        </div>
+    </section>
+
+    <section class="game-intro">
+        <div class="container">
+            <div class="game-description">
+                <h2>Sumérgete en el Mundo de Ninja Cat</h2>
+                <p>En Ninja Cat Game, te conviertes en un maestro ninja gato que debe luchar contra otros jugadores utilizando un mazo de cartas estratégico. Cada carta representa un ataque, defensa o habilidad especial que puedes usar para derrotar a tus oponentes.</p>
+                <p>Construye tu mazo, mejora tus cartas y conviértete en el gato ninja definitivo.</p>
+            </div>
+            <div class="game-image">
+                <img src="mockup/ninjaCatGame.png" alt="Ninja Cat Game">
+            </div>
+        </div>
+    </section>
+
+    <section class="card-types" id="cartas">
+        <div class="container">
+            <h2>Tipos de Cartas</h2>
+            <div class="card-types-grid">
+                <div class="card-type strike">
+                    <h3>Ataque (STRIKE)</h3>
+                    <p>Cartas ofensivas que infligen daño a tu oponente.</p>
+                    <div class="card-example">
+                        <div class="card strike-card">
+                            <div class="card-header">
+                                <h4>Corte Rápido</h4>
+                                <span class="card-type-badge">STRIKE</span>
+                            </div>
+                            <div class="card-image">
+                                <img src="mockup/strike_01_quick_cut.png" alt="Corte Rápido">
+                            </div>
+                            <div class="card-description">
+                                <p>Un ataque rápido y preciso que ignora la defensa del enemigo.</p>
+                            </div>
+                            <div class="card-stats">
+                                <span>ATK: 5</span>
+                                <span>VEL: 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-type shield">
+                    <h3>Defensa (SHIELD)</h3>
+                    <p>Cartas defensivas que te protegen de los ataques enemigos.</p>
+                    <div class="card-example">
+                        <div class="card shield-card">
+                            <div class="card-header">
+                                <h4>Bloqueo Perfecto</h4>
+                                <span class="card-type-badge">SHIELD</span>
+                            </div>
+                            <div class="card-image">
+                                <img src="mockup/shield_01_perfect_block.png" alt="Bloqueo Perfecto">
+                            </div>
+                            <div class="card-description">
+                                <p>Bloquea el próximo ataque y devuelve parte del daño.</p>
+                            </div>
+                            <div class="card-stats">
+                                <span>DEF: 7</span>
+                                <span>RES: 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-type ability">
+                    <h3>Habilidad (ABILITY)</h3>
+                    <p>Cartas con efectos especiales que pueden cambiar el curso de la batalla.</p>
+                    <div class="card-example">
+                        <div class="card ability-card">
+                            <div class="card-header">
+                                <h4>Invisibilidad</h4>
+                                <span class="card-type-badge">ABILITY</span>
+                            </div>
+                            <div class="card-image">
+                                <img src="mockup/ability_01_invisibility.png" alt="Invisibilidad">
+                            </div>
+                            <div class="card-description">
+                                <p>Hazte invisible durante 1 turno, evitando el próximo ataque.</p>
+                            </div>
+                            <div class="card-stats">
+                                <span>COSTO: 3</span>
+                                <span>DUR: 1 turno</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-play">
+        <div class="container">
+            <h2>Cómo Jugar</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Construye tu Mazo</h3>
+                    <p>Selecciona 30 cartas de tu colección para crear un mazo equilibrado entre ataques, defensas y habilidades.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Combate por Turnos</h3>
+                    <p>Juega cartas, gasta energía estratégicamente y derrota a tu oponente reduciendo sus puntos de vida a cero.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Desbloquea Recompensas</h3>
+                    <p>Gana partidas para desbloquear nuevas cartas, fondos y personalizaciones para tu gato ninja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para convertirte en un maestro Ninja Gato?</h2>
+            <p>Descarga el juego ahora y comienza tu aventura.</p>
+            <a href="#descargar" class="btn btn-primary">Descargar Ahora</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="mockup/ninja_cat_logo.png" alt="Ninja Cat Game Logo" width="150">
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="juego.html">Juego</a></li>
+                        <li><a href="#cartas">Cartas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#">🐦</a>
+                        <a href="#">📘</a>
+                        <a href="#">📸</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ninja Cat Game. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/navigation.js"></script>
+    <script type="module" src="js/animations.js"></script>
+    <script type="module" src="js/cards.js"></script>
+    <script type="module" src="js/utils.js"></script>
+</body>
+</html>

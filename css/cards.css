@@ -1,0 +1,306 @@
+/* Game Page Specific Styles */
+.game-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../mockup/preBanner.png') center/cover no-repeat;
+    padding: 180px 0 100px;
+    text-align: center;
+    color: var(--light);
+}
+
+.game-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-shadow: 3px 3px 0 var(--border);
+}
+
+.game-hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Game Introduction */
+.game-intro {
+    padding: 80px 0;
+    background-color: var(--dark);
+}
+
+.game-intro .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.game-description {
+    flex: 1;
+}
+
+.game-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.game-description p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.game-image {
+    flex: 1;
+    text-align: center;
+}
+
+.game-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Types Section */
+.card-types {
+    padding: 80px 0;
+    background-color: var(--primary-bg);
+}
+
+.card-types h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--accent);
+}
+
+.card-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card-type {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-type:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-type h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.card-type p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Card Styles */
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid var(--border);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    padding: 15px;
+    position: relative;
+    border-bottom: 2px solid var(--border);
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--dark);
+    text-align: center;
+}
+
+.card-type-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-image {
+    height: 200px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-description {
+    padding: 15px;
+    background-color: #f9f9f9;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.card-description p {
+    margin: 0;
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    background-color: #eee;
+    border-top: 2px solid var(--border);
+}
+
+.card-stats span {
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+/* Card Type Specific Styles */
+.strike-card .card-header {
+    background: linear-gradient(135deg, #8D3023 0%, #E7831D 100%);
+}
+
+.shield-card .card-header {
+    background: linear-gradient(135deg, #E6A424 0%, #F1D8A4 100%);
+}
+
+.ability-card .card-header {
+    background: linear-gradient(135deg, #E6A424 0%, #E7831D 100%);
+}
+
+/* How to Play Section */
+.how-to-play {
+    padding: 80px 0;
+    background-color: var(--dark);
+}
+
+.how-to-play h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--accent);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent);
+    color: var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    font-family: 'Bangers', cursive;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+.step p {
+    color: var(--light);
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .game-intro .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .game-description {
+        margin-bottom: 40px;
+    }
+    
+    .card-types-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .game-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .game-description h2 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        max-width: 100%;
+    }
+}
